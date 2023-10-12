@@ -1,16 +1,10 @@
 for(let i=1; i <= 100; i++){
-
-    
-
     const numberWrap = document.getElementById('wrapper');
     let box = document.createElement('div');
     numberWrap.append(box);
     box.classList.add('box-piccolo', 'border', 'm-4', 'd-flex', 'align-items-center', 'justify-content-center', 'bg-primary', 'text-white')
     numberWrap.classList.add('d-flex', 'flex-wrap')
     box.innerHTML = i
-    
-
-
     if(i % 3 === 0 && i % 5 === 0){
         console.log('FizzBuzz');
         const fizzbuzz = 'FizzBuzz'
